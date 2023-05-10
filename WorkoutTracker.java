@@ -5,7 +5,7 @@ public class WorkoutTracker {
   // creates a class called WorkoutTracker which is used as a user interface where
   // users input their workout data.
   static ArrayList<Exercise> exercises = new ArrayList<Exercise>();
-
+  
   public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);
     System.out.println("Welcome to Lyfter!");
@@ -13,8 +13,7 @@ public class WorkoutTracker {
     System.out.println("1. Add Exercise");// Allows user to add an Exercise
     System.out.println("2. View Exercise");// Allows user to view an Exercise
     System.out.println("3. One Rep Max Calculator");
-    // Allows user to calculate their ORM by inputting their lift weight & amount of
-    // reps
+    // Allows user to calculate their ORM by inputting their lift weight & amount of reps
     System.out.println("4. Exit");// Allows user to exit the application
     boolean exit = false;
     while (!exit) {
@@ -54,6 +53,7 @@ public class WorkoutTracker {
     exercises.add(exercise);
     System.out.println("Exercise added successfully. Let's get gains!");
     // Shows user their exercise was added successfully
+    scanner.close();
   }
 
   public static void viewExercise() {
